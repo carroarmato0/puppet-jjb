@@ -1,5 +1,5 @@
 # puppet-jjb
-Puppet module for the OpenStack Jenkin-Job-Builder
+Puppet module for the OpenStack Jenkins-Job-Builder
 
 Link to the project: http://docs.openstack.org/infra/jenkins-job-builder/
 
