@@ -1,19 +1,19 @@
 # Managed by Puppet
 
 [job_builder]
-ignore_cache=<%= scope.lookupvar('r_ignore_case') %>
-keep_descriptions=<%= scope.lookupvar('r_keep_descriptions') %>
+ignore_cache=<%= @r_ignore_cache %>
+keep_descriptions=<%= @r_keep_descriptions %>
 include_path=<%= @include_path %>
-recursive=<%= scope.lookupvar('r_recursive') %>
+recursive=<%= @r_recursive %>
 exclude=<%= @exclude %>
-allow_duplicates=<%= scope.lookupvar('r_allow_duplicates') %>
+allow_duplicates=<%= @r_allow_duplicates %>
 
 [jenkins]
-<% if @user %>
+<% if @user -%>
 user=<%= @user %>
-<% end %>
-<% if @password %>
+<%- end -%>
+<% if @password -%>
 password=<%= @password %>
-<% end %>
+<% end -%>
 url=<%= @jenkins_url %>
-query_plugins_info=<%= scope.lookupvar('r_query_plugins_info') %>
+query_plugins_info=<%= @r_query_plugins_info %>

@@ -3,7 +3,7 @@ class jjb (
   $user               = undef,
   $password           = undef,
   $ignore_cache       = true,
-  $keep_description   = false,
+  $keep_descriptions  = false,
   $include_path       = '.:scripts:~/git/',
   $recursive          = false,
   $exclude            = '.*:manual:./development',
@@ -12,7 +12,7 @@ class jjb (
   $use_packages       = false,
 ) {
 
-  validate_bool($ignore_cache, $keep_description, $recursive, $allow_duplicates, $query_plugins_info, )
+  validate_bool($ignore_cache, $keep_descriptions, $recursive, $allow_duplicates, $query_plugins_info, )
   validate_string($jenkins_url, $user, $password, $include_path, )
 
   $r_ignore_cache = $ignore_cache ? {
@@ -20,7 +20,7 @@ class jjb (
     default => 'False',
   }
 
-  $r_keep_description = $keep_description ? {
+  $r_keep_descriptions = $keep_descriptions ? {
     true    => 'True',
     default => 'False',
   }
