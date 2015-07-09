@@ -5,16 +5,16 @@ class jjb::python {
     pip      => true,
   }
 
-	python::pip { 'python-jenkins' :
-		pkgname  => 'python-jenkins',
-	}
+  python::pip { 'python-jenkins' :
+    pkgname  => 'python-jenkins',
+  }
 
-	python::pip { 'PyYAML' :
-		pkgname  => 'PyYAML',
-	}
+  python::pip { 'PyYAML' :
+    pkgname  => 'PyYAML',
+  }
 
-	python::pip { 'jenkins-job-builder' :
-		pkgname  => 'jenkins-job-builder',
-	}
+  python::pip { 'jenkins-job-builder' :
+    pkgname  => 'jenkins-job-builder',
+  }
 
 }
