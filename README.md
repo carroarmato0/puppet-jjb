@@ -15,6 +15,8 @@ Due to the nature of the tool, the following python modules are needed:
 By default the optional Python module is used to perform the installation through PIP.
 Should you have RPM's available in a repository, you can set the appropriate boolean.
 
+Obviously also mirror the yum repo locally as you can't ever trust the internet to stick around.
+
 ## Usage
 
 ```
