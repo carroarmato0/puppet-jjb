@@ -40,7 +40,7 @@ class jjb (
     default => 'False',
   }
 
-  include jjb::config
-  include jjb::install
+  contain jjb::config
+  contain jjb::install
 
 }

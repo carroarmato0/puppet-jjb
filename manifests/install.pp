@@ -1,9 +1,9 @@
 class jjb::install () inherits jjb {
 
   if $jjb::use_packages {
-    include jjb::package
+    contain jjb::package
   } else {
-    include jjb::python
+    contain jjb::python
   }
 
 }
