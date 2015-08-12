@@ -1,5 +1,5 @@
 {
-  "name": "puppet-test",
+  "name": "puppet-jjb",
   "version": "0.0.1",
   "author": "carroarmato0",
   "summary": "A module that manages Jenkins Job Builder",
