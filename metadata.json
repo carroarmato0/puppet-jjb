@@ -1,0 +1,15 @@
+{
+  "name": "puppet-jjb",
+  "version": "0.0.1",
+  "author": "carroarmato0",
+  "summary": "A module that manages Jenkins Job Builder",
+  "license": "GPL-2.0",
+  "source": "https://github.com/carroarmato0/puppet-jjb",
+  "project_page": "https://github.com/carroarmato0/puppet-jjb",
+  "issues_url": "https://github.com/carroarmato0/puppet-jjb/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"},
+    {"name":"stankevich/python","version_requirement":">= 1.9.6"}
+  ]
+}
+
