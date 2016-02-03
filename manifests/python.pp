@@ -2,7 +2,6 @@ class jjb::python {
 
   class { '::python' :
     version => 'system',
-    pip     => true,
   }
 
   python::pip { 'python-jenkins' :
