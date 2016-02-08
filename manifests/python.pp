@@ -16,4 +16,8 @@ class jjb::python {
     pkgname => 'jenkins-job-builder',
   }
 
+  python::pip { 'jenkins-job-builder-addons' :
+    pkgname => 'jenkins-job-builder-addons',
+  }
+
 }

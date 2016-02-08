@@ -8,6 +8,10 @@ class jjb::package {
     ensure => installed,
   }
 
+  package { 'python-jenkins-job-builder-addons':
+    ensure => installed,
+  }
+
   package { 'python-pbr':
     ensure => installed,
   }
